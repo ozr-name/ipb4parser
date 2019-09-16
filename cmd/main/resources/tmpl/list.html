@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	 <title>LIST</title>
+
+	<link rel='stylesheet' href='https://forum.bits.media/uploads/css_built_1/341e4a57816af3ba440d891ca87450ff_framework.css.ef26fbf611f8dcadb1d657e9d46786f1.css?v=884cf91590' media='all'>
+	<link rel='stylesheet' href='https://forum.bits.media/uploads/css_built_1/05e81b71abe4f22d6eb8d1a929494829_responsive.css.484fb9fac75de835e23a052a02dd9618.css?v=884cf91590' media='all'>
+	<link rel='stylesheet' href='https://forum.bits.media/uploads/css_built_1/20446cf2d164adcc029377cb04d43d17_flags.css.d7b7f5f79fded84c1e72e95929ac69f2.css?v=884cf91590' media='all'>
+	<link rel='stylesheet' href='https://forum.bits.media/uploads/css_built_1/90eb5adf50a8c640f633d47fd7eb1778_core.css.046182d7575f372c1fc75f06bc362177.css?v=884cf91590' media='all'>
+	<link rel='stylesheet' href='https://forum.bits.media/uploads/css_built_1/5a0da001ccc2200dc5625c3f3934497d_core_responsive.css.d6cc6c57204e9e7e0e5bc2b9c49ca1c0.css?v=884cf91590' media='all'>
+	<link rel='stylesheet' href='https://forum.bits.media/uploads/css_built_1/62e269ced0fdab7e30e026f1d30ae516_forums.css.a2b7ce55e31db47dc82285e4f0e0f806.css?v=884cf91590' media='all'>
+	<link rel='stylesheet' href='https://forum.bits.media/uploads/css_built_1/76e62c573090645fb99a15a363d8620e_forums_responsive.css.3e8796a24b4197136a43cae25b9386df.css?v=884cf91590' media='all'>
+	<link rel='stylesheet' href='https://forum.bits.media/uploads/css_built_1/51a672ecd6862df2c2f1969522683ee9_calendar.css.a951206cf64ef1f5bfe5b6275607e14e.css?v=884cf91590' media='all'>
+
+</head>
+
+<body>
+
+    {{ range $index, $row := .}}
+<article class="cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  ">
+	<hr>
+        <b>Написал</b>:  <u>{{ .Author }}</u> В: <i>{{ .Date }}</i>
+        <hr>
+        {{ .Body }}
+</article>
+    {{end}}
+
+</main>
+</body>
+</html>

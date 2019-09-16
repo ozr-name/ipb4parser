@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>LIST</title>
+</head>
+
+<body>
+
+    {{ range $index, $row := .}}
+        <br>
+        <br><b>Написал</b>:  <u>{{ .Author }}</u> В: <i>{{ .Date }}</i>
+        <hr>
+        {{ .Body }}
+        <br>
+        <br>
+    {{end}}
+
+</main>
+</body>
+</html>
